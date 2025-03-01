@@ -1,1 +1,1 @@
-公開url:
+公開url:https://to-be-sun.github.io/my-favorite-restaurant/
