@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お気に入りの飲食店マップ</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBi9jW141uOI7UmeAHJg6hsMQvArMv8nWQ&libraries=places&callback=initMap"></script>
+</head>
+<body>
+    <h1>お気に入りの飲食店マップ</h1>
+
+    <div class="controls">
+        <h2>ジャンル</h2>
+        <select id="categoryFilter">
+            <option value="all">すべて</option>
+        </select>
+        <h2>場所を検索</h2>
+        <input type="text" id="placeSearch" placeholder="検索したい場所を入力">
+        <button onclick="searchPlace()">検索</button>
+        <button onclick="getUserLocation()">現在地取得</button>
+
+    </div>
+
+    <div id="map"></div>
+
+    <h2>飲食店を検索して追加</h2>
+    <input type="text" id="restaurantSearch" placeholder="店名を入力">
+    <ul id="searchResults"></ul>
+    <h2 style="margin-top:150px">
+        <button id="toggleFavorites" class="toggle-btn">＋</button> お気に入りリスト
+    </h2>
+    <div id="favoriteContainer" style="display: none;">
+        <ul id="favoriteList"></ul>
+    </div>
+    
+    <ul id="favoriteList"></ul>
+</body>
+</html>

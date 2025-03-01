@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    padding-bottom:100px;
+}
+
+h1 {
+    background-color: #ffcc00;
+    padding: 10px;
+    margin: 0;
+}
+
+.controls {
+    margin: 10px;
+}
+
+#map {
+    width: 100%;
+    height: 500px;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+#searchResults{
+    border-top:1px solid black;
+    border-bottom:1px solid black;
+
+}
+#favoriteList, #searchResults {
+    list-style: none;
+    padding: 0;
+}
+
+#searchResults {
+    max-height: 150px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    background: #fff;
+    position: absolute;
+    width: 250px;
+}
+
+#searchResults li {
+    padding: 5px;
+    cursor: pointer;
+}
+
+#searchResults li:hover {
+    background-color: #ddd;
+}
+.toggle-btn {
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: transform 0.3s ease, font-size 0.3s ease;
+}
+
+.toggle-btn.open {
+    transform: rotate(45deg);
+    font-size: 28px;
+}
+
